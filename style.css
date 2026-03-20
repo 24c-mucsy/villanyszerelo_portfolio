@@ -1,0 +1,16 @@
+body{
+    background-color: #9AA0A6;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+    cursor:auto;
+}
+
+.navbar-nav{
+    text-align: right;
+}
