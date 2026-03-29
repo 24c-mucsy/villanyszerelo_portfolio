@@ -1,149 +1,292 @@
-body {
-    background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
-    color: #333;
+﻿body {
+    background-color: #f4f8fb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #1a1a1a;
     margin: 0;
     padding: 0;
 }
 
-.navbar {
-    background-color: #266daf;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.carousel-item img {
+    height: 200px;
+    width: auto;
+}
+.fejlec, nav {
+    background-color: #ffffff;
+    color: #123f7e;
+    padding: 14px 20px;
     position: sticky;
+    top: 0;
     z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.12);
+}
+
+.nev, .navbar-brand {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-}
-
-.navbar-brand {
-    color: white;
-    font-weight: bold;
+    color: #0e376e;
+    font-weight: 800;
     text-decoration: none;
+    font-size: 1.3rem;
 }
 
-.navbar-brand img {
-    height: 125px;
+.navbar-toggler{
+    background-color: #114171;
 }
 
-.navbar-toggler {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
+.navbar-toggler-icon{
+    color: #1a1a1a;
 }
 
-.navbar-nav {
+.nev .logo,
+.navbar-brand .logo {
+    height: 42px;
+    margin-right: 12px;
+}
+
+.menu, .navbar-nav {
     display: flex;
     list-style: none;
+    padding-left: 0;
     margin: 0;
-    padding: 0;
 }
 
-.navbar-nav .nav-link {
-    color: white;
+.menupont, .nav-link {
+    color: #16457f;
     text-decoration: none;
-    font-weight: 500;
     margin: 0 10px;
-    padding: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-weight: 600;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #F26419;
-    text-decoration: underline;
+.menupont:hover,
+.nav-link:hover,
+.nav-link.active,
+.menupont.active {
+    color: #ffffff;
+    background: #f9aa2e;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 62vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f4f8fb;
+    padding: 100px 20px 90px;
+    background-image: url('képek/elso.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+}
+
+.hero-text h1 {
+    font-size: clamp(2.1rem, 4vw, 3.8rem);
+    margin-bottom: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.3px;
+}
+
+.hero-text p {
+    font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+    margin-bottom: 22px;
+    color: #edf4ff;
+}
+
+.gomb, .btn-primary {
+    display: inline-block;
+    background-color: #ff9100;
+    color: white;
+    padding: 14px 34px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+}
+
+.gomb:hover,
+.btn-primary:hover {
+    background-color: #e57a00;
+    color: white;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1220px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 -10px;
-}
-
-.col-md-4 {
-    flex: 0 0 33%;
-    max-width: 33%;
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-
-.card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+section {
+    background-color: #f5f9fd;
+    padding: 40px 18px;
     margin-bottom: 20px;
-    background: white;
+    border-radius: 14px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.section-title h2 {
+    color: #12406f;
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+.section-title p {
+    color: #4b6f8f;
+}
+
+h1, h2 {
+    color: #123f7f;
+    margin: 0 0 16px;
+}
+
+.about .profile {
+    max-width: 240px;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+.services .card,
+.references .reference-card {
+    border: 1px solid #d6e3f0;
+    border-radius: 14px;
+    background-color: #ffffff;
     overflow: hidden;
 }
 
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.card-img-top {
+.services .card-img,
+.references .ref-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
-.card-body {
-    padding: 20px;
+.card-content,
+.reference-card {
+    padding: 18px;
 }
 
-.card-title {
-    color: #0D3B66;
-    font-weight: bold;
-    margin: 0 0 10px 0;
+.card-content h5,
+.reference-card h5 {
+    color: #114171;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
-.card-text {
-    color: #555;
-    margin: 0 0 15px 0;
+.card-content p,
+.reference-card p {
+    font-size: 0.97rem;
+    color: #455e78;
+    margin-bottom: 14px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
+.services .gomb {
+    width: 100%;
     text-align: center;
 }
 
-.btn-primary {
-    background-color: #F26419;
+.kapcsolat,
+footer {
+    background-color: #12406d;
+    color: #eef3fb;
+}
+
+.kapcsolat h2 {
     color: white;
 }
 
-.btn-primary:hover {
-    background-color: #e55a1a;
+.contact .info {
+    background: rgba(17, 73, 129, 0.22);
+    border: 1px solid rgba(255,255,255,0.22);
+    border-radius: 14px;
+    padding: 24px;
 }
 
-h1 {
-    color: #0D3B66;
-    font-size: 2.5rem;
-    margin-top: 50px;
-    text-align: center;
+.contact .form {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
 }
 
-p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+.contact .form-control {
+    border: 1px solid #c4d5e7;
+}
+
+.contact label {
+    font-weight: 600;
+    color: #0f3f6f;
+}
+
+.contact .masodlagos-gomb {
+    width: 100%;
+    background-color: #ff9000;
+    color: #0f2c58;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.contact .masodlagos-gomb:hover {
+    background-color: #d47600;
+    color: white;
+}
+
+.contact-link {
+    color: #ff9100;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-link:hover {
+    color: #e57a00;
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #0d3562;
+    color: white;
     text-align: center;
-    margin-bottom: 40px;
+    padding: 22px 14px;
+    margin-top: 10px;
+}
+
+.nav-tabs .nav-link {
+    color: #16457f;
+    border: 1px solid #d6e3f0;
+    background-color: #f5f9fd;
+}
+
+.nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #ff9100;
+    border-color: #ff9100;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #ffffff;
+    background-color: #e57a00;
+    border-color: #e57a00;
+}
+
+.tab-content {
+    padding-top: 40px;
+}
+
+.carousel img {
+    height: 300px;
+    object-fit: cover;
 }

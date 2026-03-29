@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="hu">
 
 <head>
@@ -17,177 +17,265 @@
 </head>
 
 <body>
-
-    <!--  hamburgermenü a navba  -->
-
-    <nav class="navbar navbar-expand-lg navbar-light text-white navbar-expand-sm h-100 ms-auto">
-        <a class="navbar-brand text-white" href="#">
-            <img src="./képek/navkép.png" width="200" class="d-inline-block" alt="">
-        </a>
+    <nav class="nav navbar navbar-expand-lg fejlec">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a href="#" class="navbar-brand nev">
+                <img src="képek/navkép.png" alt="Villanyszerelők" class="logo">
+                Villanyszerelők
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link text-white mr-sm-2" href="#">Profil</a>
-                    <a class="nav-link text-white mr-sm-2" href="#szolgaltatasok">Szolgáltatásaink</a>
-                    <a class="nav-link text-white mr-sm-2" href="#referenciamunkak">Referencia munkák</a>
-                    <a class="nav-link text-white mr-sm-2" href="#">Ajánlatkérés</a>
-                    <a class="nav-link text-white mr-sm-2" href="#velemenyek">Vélemények</a>
-                    <a class="nav-link text-white mr-sm-2" href="#">Kapcsolat</a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto menu">
+                    <li class="nav-item">
+                        <a class="nav-link menupont" aria-current="page" href="#">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menupont" href="#szolgaltatasok">Szolgáltatások</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menupont" href="#referenciamunkak">Referenciák</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menupont" href="#kapcsolat">Kapcsolat</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container">
-        <h1>Üdvözöljük weboldalunkon!</h1>
-        <p>Cégünk villanyszerelési és burkolási munkák széles körében nyújt megbízható és szakszerű
-            szolgáltatást lakossági és üzleti ügyfelek számára egyaránt. Legyen szó új építésről, felújításról,
-            hibaelhárításról vagy teljes kivitelezésről, minden munkánkat precízen, a hatályos szabványoknak megfelelően
-            és
-            nagy odafigyeléssel végezzük. Célunk, hogy ügyfeleink számára tartós, biztonságos és esztétikus megoldásokat
-            biztosítsunk.
-        </p>
-
-
-        <p id="szolgaltatasok"></p> <br>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./képek/service1.jpg" class="card-img-top" alt="Villantászerelés">
-                    <div class="card-body">
-                        <h5 class="card-title">Villantászerelés</h5>
-                        <p class="card-text">Szakszerű villanyszerelési szolgáltatások új építéshez és felújításhoz.</p>
-                        <a href="#" class="btn btn-primary">További információ</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./képek/service2.jpg" class="card-img-top" alt="Burkolás">
-                    <div class="card-body">
-                        <h5 class="card-title">Burkolás</h5>
-                        <p class="card-text">Minőségi burkolási munkák lakásokban és irodákban.</p>
-                        <a href="#" class="btn btn-primary">További információ</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./képek/service3.jpg" class="card-img-top" alt="Hibaelhárítás">
-                    <div class="card-body">
-                        <h5 class="card-title">Hibaelhárítás</h5>
-                        <p class="card-text">Gyors és hatékony hibaelhárítás minden villanyszerelési problémára.</p>
-                        <a href="#" class="btn btn-primary">További információ</a>
-                    </div>
-                </div>
-            </div>
+    <header class="hero">
+        <div class="hero-text">
+            <h1><span class="c1">Precíz</span> és biztonságos villanyszerelés</h1>
+            <p>Minden rendszer tervezése, kivitelezése és karbantartása egy helyen – gyors, megbízható, garanciával.</p>
+            <a href="#kapcsolat" class="gomb">Ingyenes árajánlat</a>
         </div>
+    </header>
 
+    <main class="container">
+        <section class="about py-5">
+            <div class="row align-items-center">
+                <p></p><br><br>
+                <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                    <img src="képek/csapat.jpg" alt="Cégvezető" class="profile">
+                </div>
+                <div class="col-lg-9">
+                    <h2><span class="c1">Rólunk</span></h2>
+                    <p>15 év tapasztalat villanyszerelésben, lakossági és vállalati ügyfeleknek. Célunk a biztonságos,
+                        fenntartható és hatékony működés minden eszköznél.</p>
+                </div>
+            </div>
+        </section>
 
-        <p id="referenciamunkak"></p>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                        aria-controls="panelsStayOpen-collapseOne">
-                        Accordion Item #1
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                    aria-labelledby="panelsStayOpen-headingOne">
-                    <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+        <section id="szolgaltatasok" class="services py-5 bg-light">
+            <div class="section-title text-center mb-4">
+                <h2><span class="c1">Szolgáltatásaink</span></h2>
+                <p>Komplett megoldásaink minden villanyszerelési munkához.</p>
+            </div>
+            <div class="row gx-4 gy-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./képek/kep2.webp" class="card-img" alt="Villanyszerelés">
+                        <div class="card-content">
+                            <h5 class="title"><span class="c1">Teljes villanyszerelés</span></h5>
+                            <p class="desc">Új építésű és felújított helyiségek teljes elektromos hálózatának
+                                kivitelezése.</p>
+                            <a href="#kapcsolat" class="gomb">Árajánlatot kérek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./képek/kep1.png" class="card-img" alt="Burkolás">
+                        <div class="card-content">
+                            <h5 class="title"><span class="c2">Rejtett csövezés, burkolás</span></h5>
+                            <p class="desc">Esztétikus és szabványos kábelezés fal- és padlóburkolat alatt.</p>
+                            <a href="#kapcsolat" class="gomb">Árajánlatot kérek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./képek/kep3.png" class="card-img" alt="Hibaelhárítás">
+                        <div class="card-content">
+                            <h5 class="title"><span class="c3">Hibaelhárítás</span></h5>
+                            <p class="desc">24 órás működő hibaelhárítás rövidzárlat, áramszünet és csatlakozóproblémák
+                                esetén.</p>
+                            <a href="#kapcsolat" class="gomb">Azonnali segítség</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo">
-                        Accordion Item #2
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwo">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+        </section>
+
+        <section id="referenciamunkak" class="references py-5">
+            <h2 class="section-title">Eddigi munkáink és tanításaink</h2>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="villanyszereles-tab" data-bs-toggle="tab" data-bs-target="#villanyszereles" type="button" role="tab" aria-controls="villanyszereles" aria-selected="true">Villanyszerelés</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="burkolas-tab" data-bs-toggle="tab" data-bs-target="#burkolas" type="button" role="tab" aria-controls="burkolas" aria-selected="false">Burkolás</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="oktas-tab" data-bs-toggle="tab" data-bs-target="#oktas" type="button" role="tab" aria-controls="oktas" aria-selected="false">Oktatás</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="villanyszereles" role="tabpanel" aria-labelledby="villanyszereles-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="carouselVillanyszereles" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="képek/vill1.png" class="d-block w-100" alt="Villanyszerelés kép 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="képek/vill2.png" class="d-block w-100" alt="Villanyszerelés kép 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="képek/vill3.png" class="d-block w-100" alt="Villanyszerelés kép 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="képek/vill4.png" class="d-block w-100" alt="Villanyszerelés kép 4">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselVillanyszereles" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Előző</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselVillanyszereles" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Következő</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Villanyszerelés szolgáltatásaink</h5>
+                            <p>Teljes körű villanyszerelési munkák, beleértve új hálózatok telepítését, felújításokat és karbantartást. Tapasztalt csapatunk biztosítja a biztonságos és hatékony megoldásokat minden projektben.</p>
+                            <p>Legyen szó lakossági vagy ipari projektekről, mi minden igényt kielégítünk.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="burkolas" role="tabpanel" aria-labelledby="burkolas-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="carouselBurkolas" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="képek/burk1.png" class="d-block w-100" alt="Burkolás kép 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="képek/burk2.webp" class="d-block w-100" alt="Burkolás kép 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="képek/burk3.jpeg" class="d-block w-100" alt="Burkolás kép 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBurkolas" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Előző</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselBurkolas" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Következő</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Burkolási szolgáltatásaink</h5>
+                            <p>Rejtett csövezés és burkolás szakértői. Esztétikus és tartós megoldások fal- és padlóburkolatok alá, minden szabványnak megfelelően.</p>
+                            <p>Tapasztalt burkolóink garantálják a minőségi kivitelezést.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="oktas" role="tabpanel" aria-labelledby="oktas-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="carouselOktas" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="képek/oktas1.png" class="d-block w-100" alt="Oktatás kép 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="képek/oktas2.webp" class="d-block w-100" alt="Oktatás kép 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="képek/oktas3.png" class="d-block w-100" alt="Oktatás kép 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselOktas" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Előző</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselOktas" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Következő</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Oktatási szolgáltatásaink</h5>
+                            <p>Villanyszerelési tanfolyamok és képzések kezdőknek és haladóknak. Biztonságos tanulás gyakorlati példákkal és szakértői vezetéssel.</p>
+                            <p>Csatlakozz hozzánk és tanulj a legjobbaktól!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree">
-                        Accordion Item #3
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+        </section>
+
+        <section id="kapcsolat" class="contact kapcsolat py-5">
+            <div class="section-title text-center mb-4">
+                <h2><span class="c3">Kapcsolat</span></h2>
+                <p>Kérj időpontot vagy ajánlatot - készséggel segítünk.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="info p-4">
+                        <p><strong>Telefonszám:</strong> +36 30 123 4567</p>
+                        <p><strong>Email:</strong> info@biztosfazis.hu</p>
+                        <p><strong>Cím:</strong> 1106 Budapest, Szabadság út 10.</p>
+                        <p><strong>Nyitvatartás:</strong> H–P 7:00–18:00</p>
                     </div>
                 </div>
+                <div class="col-lg-7">
+                    <form class="form p-4" action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Név</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Teljes név"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="email@pelda.hu" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefonszám</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+36 30 ..."
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Üzenet</label>
+                            <textarea class="form-control" id="message" name="message" rows="4"
+                                placeholder="Írja le röviden a feladatot"></textarea>
+                        </div>
+                        <button type="submit" class="masodlagos-gomb">Küldés</button>
+                    </form>
+                </div>
             </div>
+        </section>
+    </main>
+    <script src="https://widget.trustmary.com/DI2RgxT8r"></script>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <p><strong>Villanyszerelők</strong> - 1106 Budapest, Szabadság út 10. | +36 30 123 4567 |
+                info@biztosfazis.hu</p>
         </div>
-
-        <p id="velemenyek"></p>
-        <script src="https://widget.trustmary.com/DI2RgxT8r"></script>
-*-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
+    </footer>
 </body>
 
 </html>
-
-<!--
-    Sötétkék:
-        HEX: #0D3B66
-        RGB: 13, 59, 102
-
-    Narancssárga
-        HEX: #F26419
-        RGB: 242, 100, 25
-
--->
